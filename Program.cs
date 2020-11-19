@@ -62,6 +62,15 @@ namespace linq
             // {
             //     Console.WriteLine(num);
             // }
+
+
+            // Output how many numbers are in this list
+            List<int> numbersAgg = new List<int>()
+            {
+                15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
+            };
+
+            Console.WriteLine(numbersAgg.Count);
         }
     }
 }
