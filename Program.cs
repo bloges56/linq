@@ -49,6 +49,19 @@ namespace linq
             // {
             //     Console.WriteLine(name);
             // }
+
+            // Build a collection of these numbers sorted in ascending order
+            List<int> nums = new List<int>()
+            {
+                15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
+            };
+
+            List<int> sortedNums = nums.OrderBy(num => num).ToList();
+
+            // foreach (int num in sortedNums)
+            // {
+            //     Console.WriteLine(num);
+            // }
         }
     }
 }
