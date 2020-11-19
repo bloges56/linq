@@ -32,6 +32,36 @@ namespace linq
             // {
             //     Console.WriteLine(num);
             // }
+
+            // Order these student names alphabetically, in descending order (Z to A)
+            List<string> names = new List<string>()
+            {
+                "Heather", "James", "Xavier", "Michelle", "Brian", "Nina",
+                "Kathleen", "Sophia", "Amir", "Douglas", "Zarley", "Beatrice",
+                "Theodora", "William", "Svetlana", "Charisse", "Yolanda",
+                "Gregorio", "Jean-Paul", "Evangelina", "Viktor", "Jacqueline",
+                "Francisco", "Tre"
+            };
+
+            List<string> descend = names.OrderByDescending(name => name).ToList();
+
+            // foreach(string name in descend)
+            // {
+            //     Console.WriteLine(name);
+            // }
+
+            // Build a collection of these numbers sorted in ascending order
+            List<int> nums = new List<int>()
+            {
+                15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
+            };
+
+            List<int> sortedNums = nums.OrderBy(num => num).ToList();
+
+            // foreach (int num in sortedNums)
+            // {
+            //     Console.WriteLine(num);
+            // }
         }
     }
 }
